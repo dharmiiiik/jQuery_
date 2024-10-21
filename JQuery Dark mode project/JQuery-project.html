@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery-project</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4138/4138124.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header (Navigation Bar) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Instagram</div>
+            <input type="text" placeholder="Search..." class="search-bar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#"><button>Dark Mode</button></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <div class="profile-header">
+            <div class="profile-pic-placeholder">
+                <img class="img1" src="images/WhatsApp Image 2024-10-01 at 1.47.26 PM (1).jpeg" alt="">
+            </div>
+            <div class="profile-info">
+                <h2>@username</h2>
+                <p>Bio: Web Developer | Designer | Content Creator</p>
+                <p>150 posts | 2.1M followers | 13 following</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Grid Section -->
+    <section class="post-grid">
+        <h2>Your Posts</h2>
+        <div class="grid">
+            <img class="post-placeholder" src="images/WhatsApp Image 2024-10-01 at 1.47.26 PM (1).jpeg" alt="">
+            <img class="post-placeholder" src="images/WhatsApp Image 2024-10-01 at 1.47.26 PM (2).jpeg" alt="">
+            <img class="post-placeholder" src="images/WhatsApp Image 2024-10-01 at 1.47.26 PM.jpeg" alt="">
+            <img class="post-placeholder" src="images/WhatsApp Image 2024-10-01 at 1.47.27 PM (1).jpeg" alt="">
+            <img class="post-placeholder" src="images/WhatsApp Image 2024-10-01 at 1.47.27 PM.jpeg" alt="">
+            <img class="post-placeholder" src="images/WhatsApp Image 2024-10-01 at 1.47.28 PM.jpeg" alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Instagram Clone. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS Jquery  -->
+    <script>
+        $(document).ready(function(){
+
+            $(".btnFadeIn").click(function (){
+                $("button").toggle(1000);
+            })
+
+            $("button").click(function () {
+                $("body").css({backgroundColor: "black" ,color:"white"})
+                $("header").css({backgroundColor: "black" ,color:"white"})
+                $(".profile").css({backgroundColor: "black" ,color:"white"})
+                $("footer").css({backgroundColor: "black" ,color:"white"})
+                $("h2").css({backgroundColor: "black" ,color:"white"})
+                $("p").css({backgroundColor: "black" ,color:"white"})
+                $("input").css({backgroundColor: "black" ,color:"white"})
+
+            })
+        })
+    </script>
+</body>
+</html>
